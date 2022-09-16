@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * mani - Entry point
+ * main - Entry point
  *
  * Return: 0 (Success)
  */
@@ -14,5 +14,5 @@ int main(void)
 		putchar(low);
 		printf("\n");
 
-	return (0)
+	return (0);
 }
