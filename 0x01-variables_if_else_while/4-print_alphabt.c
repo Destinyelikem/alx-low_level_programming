@@ -6,7 +6,6 @@
  *
  * Return: Always Success
  */
-
 int main(void)
 {
 	char low, e, q;
@@ -20,3 +19,4 @@ for (low = 'a'; low <= 'z'; low++)
 printf("\n");
 return (0);
 }
+
