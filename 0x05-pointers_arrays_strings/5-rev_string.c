@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * rev_string - reverses a string
  * @s: pointer to string
@@ -16,7 +15,7 @@ void rev_string(char *s)
 		i++;
 	}
 	k = 0;
-	j = i - l;
+	j = i - 1;
 
 	while (k < j)
 	{
