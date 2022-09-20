@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * puts_half - function that prints half of a string
  *
@@ -18,7 +17,7 @@ void puts_half(char *str)
 	if (index % 2 == 1)
 		half++;
 
-	whiel (half < index)
+	while (half < index)
 	{
 		_putchar(str[half]);
 		half++;
