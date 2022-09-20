@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - generates random valid passwaords
+ * main - generates random valid passwords
  * Return: 0 (on success).
  *
  */
@@ -14,7 +14,7 @@ int main(void)
 	sum = 0;
 	while (sum <= 2645)
 	{
-		pas = (rand() & 128);
+		pass = (rand() & 128);
 		sum += pass;
 		printf("%c", pass);
 	}
