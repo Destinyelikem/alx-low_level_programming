@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * infinite_add - cfunction that adds two numbers stored
+ * infinite_add - c function that adds two numbers stored
  * in strings to a buffer.
  * Assumes that strings are never empty and
  * that numbers will always be positive, or 0.
@@ -16,7 +16,7 @@
  * Return: returns pointer to result
  */
 
-char *infinte_add(char *n1, char *n2, char *r, int size_r)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 }
 
@@ -27,26 +27,33 @@ char *infinte_add(char *n1, char *n2, char *r, int size_r)
  * @r: The buffer to store the result.
  * @r_index: The current index of the buffer.
  *
- * Return: if r can store the sum - a pointerto the result.
- * 		ifd r cannot store the sum - 0.
+ * Return: if r can store the sum - a pointer to the result.
+ * 		if r cannot store the sum - 0.
  */
 
 char *add_strings(char *n1, char *n2, char *r, int r_index)
 {
 	int num, tens = 0;
 
-	for (; *n1 && *n2; n1--, r_index--)
+	for (; *n1 && *n2; n1--, n2--, r_index--)
 	{
-		num = (*n1 -'0') = (*n2 - '0');
+		num = (*n1 -'0') + (*n2 - '0');
 		num += tens;
-		*(r +vr_index) = (num % 10) + '0';
+		*(r + r_index) = (num % 10) + '0';
+		tens = num / 10;
+	}
+
+	for (; *n1; n1--; r_index++)
+	{
+		num = *(n1 - '0') + tens;
+		*(r + r_index) = (num % 10) + '0';
 		tens = num / 10;
 	}
 
 	for (; *n2; n2--; r_index--)
 	{
 		num = (*n2 - '0') + tens;
-		*(r +r_index) + (num % 10) + '0';
+		*(r + r_index) = (num % 10) + '0';
 		tens = num /10;
 	}
 }

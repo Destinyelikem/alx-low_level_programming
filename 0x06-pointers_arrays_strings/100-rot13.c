@@ -25,10 +25,10 @@ char *rot13(char *str)
 											'Z', 'A', 'B', 'C', 'D', 'E',
 											'F', 'G', 'H', 'I', 'J', 'K',
 											'L', 'M', 'n', 'o', 'p', 'q',
-											'r', 's', 't', 'u', 'w', 'x',
-											'y', 'z', 'a', 'b', 'c', 'd',
-											'e', 'f', 'g', 'h', 'i', 'j',
-											'k', 'l', 'm'};
+											'r', 's', 't', 'u', 'v', 'w',
+											'x', 'y', 'z', 'a', 'b', 'c',
+											'd', 'e', 'f', 'g', 'h', 'i',
+											'j', 'k', 'l', 'm'};
 	while (str[++index1])
 	{
 		for (index2 = 0; index2 < 52; index2++)
