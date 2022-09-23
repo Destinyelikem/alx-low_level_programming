@@ -14,18 +14,19 @@ void times_table(void)
 		_putchar(',');
 		_putchar(' ');
 
-		for (col = 1; col <= 9; col++)
-		{
-			d = (rw * col);
+	for (col = 1; col <= 9; col++)
+	{
+		d = (rw * col);
 
-			if ((d / 10) > 0)
-			{
-				_putchar((d / 10) + '0');
-			}
-			else
-			{
-				_putchar(' ');
-			}
+		if ((d / 10) > 0)
+		{
+			_putchar((d / 10) + '0');
 		}
+		else
+		{
+			_putchar(' ');
+		}
+	}
+	_putchar('\n');
 	}
 }
