@@ -5,7 +5,8 @@
  * @size: size of array
  * @c: char to initialize array with
  *
- * Return: NULL if it fails or pointer to array
+ * Return: NULL if it fails or
+ * pointer to array
  */
 char *create_array(unsigned int size, char c)
 {
