@@ -24,7 +24,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - return product of 2 numbers
+ * op_mul - return product of two numbers
  * @a: integer
  * @b: integer
  *
@@ -58,7 +58,8 @@ int op_div(int a, int b)
  * @b: integer
  *
  * Return: remainder
- */int op_mod(int a, int b)
+ */
+int op_mod(int a, int b)
 {
 	if (b == 0)
 	{
