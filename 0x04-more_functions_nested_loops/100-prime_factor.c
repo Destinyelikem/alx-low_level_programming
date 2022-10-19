@@ -2,26 +2,22 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the largest prime factor of the number 612852475143.
- * Return: Always 0 (success)
- */
+*main - find prime number
+*Description: The prime factors of 1231952 are 2, 2, 2, 2, 37 and 2081.
+*Return: zero
+*/
+
 int main(void)
 {
-	long prime = 612852475143, div;
+	long int x = 612852475143;
 
-	while (div < (prime / 2))
+	long int count;
+
+	for (count = 2; count < x; count++)
 	{
-		if ((prime % 2) == 0)
-		{
-			prime /= 2;
-		}
-		for (div = 3; div < (prime / 2); div += 2)
-		{
-			if ((prime % div) == 0)
-			{
-				ptime /= div;
-			}
-		}
-	}printf("%d\n", prime);
+		if (x % count == 0)
+			x = x / count;
+	}
+	printf("%ld\n", count);
 	return (0);
 }
